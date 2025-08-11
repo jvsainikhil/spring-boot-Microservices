@@ -1,5 +1,6 @@
 package com.nikscodeking.springbootdemo;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,8 @@ public class HomeController {
 		return "Hello Nikhil";
 	}
 	
-	@RequestMapping(value = "/user", method = RequestMethod.GET) // ---> This get mapping we know but we need to define 
+	//@RequestMapping(value = "/user", method = RequestMethod.GET) // ---> This get mapping we know but we need to define 
+	@GetMapping("/user") // Much easier to see
 	//userDetails - Method ---> We have set the details
 	public User userDetails() {
 		User user =  new User();
