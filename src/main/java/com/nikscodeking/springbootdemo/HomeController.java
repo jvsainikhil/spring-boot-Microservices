@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.nikscodeking.springbootdemo.model.User;
 
 //Creating and object and how we can send the objects back, New end point to handle objects 
@@ -30,6 +29,6 @@ public class HomeController {
 
 	@GetMapping("/{id}")
 	public String pathvariable(@PathVariable String id) {
-		return "The path variable is: " + id;
+		return "The path variable is: " + id +"sample";
 	}
 }
