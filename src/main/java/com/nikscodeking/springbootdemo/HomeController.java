@@ -28,8 +28,8 @@ public class HomeController {
 		return user;
 	}
 	
-	@GetMapping("/{id}")
-	public String pathvariable(@PathVariable String id) {
-		return "The path variable is: " + id;
+	@GetMapping("/{id}/{id2}")
+	public String pathvariable(@PathVariable String id, @PathVariable("id2") String name) {
+		return "The path variable is: " + id + " : " + name;
 	}
 }
