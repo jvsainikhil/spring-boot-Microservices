@@ -34,7 +34,7 @@ public class HomeController {
 	}
 	
 	@GetMapping("/reqparam")
-	public String requestparam(@RequestParam String name, @RequestParam(name= "email", required = false) String emailId) {
+	public String requestparam(@RequestParam String name, @RequestParam(name= "email", required = false, defaultValue= "Please enter value") String emailId) {
 		return "Your name is: " + name + "\nEmailId: " + emailId;
 	}
 }
