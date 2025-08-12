@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nikscodeking.springbootdemo.model.User;
 
-//Creating and object and how we can send the objects back, New end point to handle objects 
-// it will handle the resources and i will send the data response body status codes
+// Creating and object and how we can send the objects back, New end point to handle objects 
+// It will handle the resources and i will send the data response body status codes
 @RestController
 public class HomeController {
 	@RequestMapping("/hello")
@@ -27,9 +27,9 @@ public class HomeController {
 		user.setEmailid("jvsainikhil@gmail.com");
 		return user;
 	}
-	
-	@GetMapping("/{id}/{id2}")
-	public String pathvariable(@PathVariable String id, @PathVariable("id2") String name) {
-		return "The path variable is: " + id + " : " + name;
+
+	@GetMapping("/{id}/{id1}/{id2}")
+	public String pathvariable(@PathVariable("id") String id, @PathVariable("id1") String name, @PathVariable("id2") String name1) {
+		return "The path variable is: " + id + " : " + name + " : " + name1 ;
 	}
 }
