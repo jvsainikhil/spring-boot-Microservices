@@ -26,9 +26,9 @@ public class HomeController {
 		user.setEmailid("jvsainikhil@gmail.com");
 		return user;
 	}
-
+	
 	@GetMapping("/{id}")
 	public String pathvariable(@PathVariable String id) {
-		return "The path variable is: " + id +"sample";
+		return "The path variable is: " + id;
 	}
 }
