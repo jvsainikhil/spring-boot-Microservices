@@ -1,4 +1,4 @@
-package com.nikscodeking.springbootdemo.model;
+package model;
 
 public class User {
 	// we make it as a pojo

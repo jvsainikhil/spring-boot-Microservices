@@ -1,4 +1,4 @@
-package com.nikscodeking.springbootdemo.model;
+package model;
 
 public class Employee {
 	
@@ -7,6 +7,7 @@ public class Employee {
 	private String lastName;
 	private String emailId;
 	private String department;
+	
 	public String getEmployeeId() {
 		return employeeId;
 	}
@@ -37,5 +38,4 @@ public class Employee {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-
 }

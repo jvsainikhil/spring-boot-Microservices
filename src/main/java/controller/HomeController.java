@@ -1,11 +1,12 @@
-package com.nikscodeking.springbootdemo;
+package controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.nikscodeking.springbootdemo.model.User;
+
+import model.User;
 
 // Creating and object and how we can send the objects back, New end point to handle objects 
 // It will handle the resources and i will send the data response body status codes
