@@ -29,5 +29,4 @@ public class User {
 	public void setEmailid(String emailid) {
 		this.emailid = emailid;
 	}
-
 }
