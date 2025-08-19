@@ -6,6 +6,7 @@ import model.Employee;
 
 public interface EmployeeService {
 
+	Employee getEmployeeById(String id);
 	Employee save(Employee employee);
 	List<Employee> getAllEmployees();
 }
