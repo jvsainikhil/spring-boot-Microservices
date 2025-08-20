@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
+import error.EmployeeNotFoundException;
 import model.Employee;
 
 @Service
@@ -38,7 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	        }
 	    }
 	    //return null; // return null if not found
-	    throw new RuntimeException(ErrorMessage); 
+	    throw new EmployeeNotFoundException(ErrorMessage); 
 	}
 
 	/*@Override
@@ -47,6 +48,6 @@ public class EmployeeServiceImpl implements EmployeeService {
             .stream()
             .filter(employee -> employee.getEmployeeId().equals(id))
             .findFirst()
-            .orElseThrow(() -> new RuntimeException(ErrorMessage));
+            .orElseThrow(() -> new EmployeeNotFoundException(ErrorMessage));
 	}*/
 }
