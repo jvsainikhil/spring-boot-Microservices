@@ -24,7 +24,7 @@ public class HomeController {
 	public User userDetails() {
 		User user = new User();
 		user.setId("0");
-		user.setName("Nikhil");
+		user.setName("Nikhil - I'm Back");
 		user.setEmailid("jvsainikhil@gmail.com"); 
 		return user;
 	}

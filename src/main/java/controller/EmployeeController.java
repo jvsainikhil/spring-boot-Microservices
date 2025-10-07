@@ -19,7 +19,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
-	// For saving the employe in data base
+	// For saving the employee in data base
 	@PostMapping
 	public Employee save(@RequestBody Employee employee) {
 		// calling service and business layer
